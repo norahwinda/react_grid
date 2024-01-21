@@ -1,12 +1,9 @@
-import './App.css';
-import Mymap from './Mymap'
+import Canvas from "./Canvas"
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <Mymap />
-    </div>
-  );
+    <Canvas />
+  )
 }
 
-export default App;
+export default App
