@@ -3,6 +3,7 @@ import map from "./assets/image.svg"
 import { ModalComponent } from './Modal'
 import Button from 'react-bootstrap/Button';
 import axios from 'axios'
+import SideBar from './components/sidebar/sidebar';
 
 const Canvas = () => {
   const canvasSize = 52; // in centimeters
@@ -207,6 +208,7 @@ const Canvas = () => {
           Refresh
         </Button>
       </div>
+
 
       <div style={canvasStyle}>
         <div style={{
