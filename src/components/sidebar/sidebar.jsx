@@ -10,7 +10,7 @@ function SideBar(props){
                 <li>element.company_id</li>
             });} */}
 
-            <ul style={{textDecoration:"none", marginTop:20, lineHeight:"35px" }}>
+            <ul style={{textDecoration:"none", marginTop:20, lineHeight:"35px", cursor:"hover" }}>
                 <li>Workspace 1</li>
                 <li>Workspace 2</li>
                 <li>Workspace 3</li>

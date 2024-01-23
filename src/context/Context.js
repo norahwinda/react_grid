@@ -3,8 +3,8 @@ import { createContext, useContext, useState } from "react";
 const ProjectContext = createContext();
 
 
-export const ContextProvider = ({ children }) => {
-    const [workspaceData, setWorkspaceData] = useState();
+const ContextProvider = ({ children }) => {
+    const [workspaceData, setWorkspaceData] = useState("fly");
 
     return (
         <ProjectContext.Provider value={{ workspaceData, setWorkspaceData }}>
@@ -13,7 +13,12 @@ export const ContextProvider = ({ children }) => {
     )
 }
 
-export const useStateContext = () => useContext(ProjectContext);
+const useStateContext = () => {
+    return useContext(ProjectContext);
+};
+
+export { ContextProvider, useStateContext };
+
 
 
 
